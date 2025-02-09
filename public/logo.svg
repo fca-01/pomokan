@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="black" />
+  
+  <!-- Dynamic zigzag line -->
+  <path
+    d="M10 90 Q25 70 40 85 T70 60 T100 35"
+    stroke="white"
+    stroke-width="2"
+    fill="none"
+  />
+  
+  <!-- Pulsing circle -->
+  <circle cx="70" cy="60" r="8" fill="white" opacity="0.8">
+    <animate attributeName="r" values="6;8;6" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Moving dot -->
+  <circle cx="10" cy="90" r="3" fill="white">
+    <animate
+      attributeName="cx"
+      values="10;25;40;55;70;85;100"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="cy"
+      values="90;70;85;72.5;60;47.5;35"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+  </circle>
+</svg>
